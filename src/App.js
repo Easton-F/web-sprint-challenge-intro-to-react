@@ -22,6 +22,8 @@ const App = () => {
         .catch(err => console.log(err));
   }, []);
 
+  console.log('Data', data);
+
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
