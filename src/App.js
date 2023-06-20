@@ -27,7 +27,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      { data && <Character character={data} /> }
+      { data && data.map(char => {
+        return <Character name={char.name} birthYear={char.birth_year}/>
+      }) }
     </div>
   );
 }
